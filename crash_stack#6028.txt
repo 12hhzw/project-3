@@ -1,0 +1,21 @@
+FATAL EXCEPTION: AsyncTask #1
+ Process: com.ichi2.anki, PID: 4195
+ java.lang.RuntimeException: An error occurred while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:309)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:354)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:223)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:234)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+ 	at java.lang.Thread.run(Thread.java:818)
+ Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'long java.lang.Long.longValue()' on a null object reference
+ 	at com.ichi2.libanki.Collection.genCards(Collection.java:761)
+ 	at com.ichi2.libanki.Collection.genCards(Collection.java:708)
+ 	at com.ichi2.libanki.Collection.emptyCids(Collection.java:966)
+ 	at com.ichi2.async.DeckTask.doInBackGroundFindEmptyCards(DeckTask.java:1500)
+ 	at com.ichi2.async.DeckTask.doInBackground(DeckTask.java:346)
+ 	at com.ichi2.async.DeckTask.doInBackground(DeckTask.java:70)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:295)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+ 	... 4 more

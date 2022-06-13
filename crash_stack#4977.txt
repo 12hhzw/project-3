@@ -1,0 +1,33 @@
+-------- beginning of crash
+E AndroidRuntime: FATAL EXCEPTION: main
+E AndroidRuntime: Process: com.ichi2.anki, PID: 3888
+E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.support.v7.widget.SearchView.isIconified()' on a null object reference
+E AndroidRuntime:        at com.ichi2.anki.CardBrowser$20.onPostExecute(CardBrowser.java:1364)
+E AndroidRuntime:        at com.ichi2.async.DeckTask$TaskListener.onPostExecute(DeckTask.java:1521)
+E AndroidRuntime:        at com.ichi2.async.DeckTask.onPostExecute(DeckTask.java:376)
+E AndroidRuntime:        at com.ichi2.async.DeckTask.onPostExecute(DeckTask.java:69)
+E AndroidRuntime:        at android.os.AsyncTask.finish(AsyncTask.java:667)
+E AndroidRuntime:        at android.os.AsyncTask.-wrap1(AsyncTask.java)
+E AndroidRuntime:        at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:684)
+E AndroidRuntime:        at android.os.Handler.dispatchMessage(Handler.java:102)
+E AndroidRuntime:        at android.os.Looper.loop(Looper.java:154)
+E AndroidRuntime:        at android.app.ActivityThread.main(ActivityThread.java:6121)
+E AndroidRuntime:        at java.lang.reflect.Method.invoke(Native Method)
+E AndroidRuntime:        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:889)
+E AndroidRuntime:        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:779)
+E EGL_adreno: CreateContext rcMajorVersion:3, minorVersion:0
+E RemotePrintSpooler: Error getting print jobs.
+E RemotePrintSpooler: java.util.concurrent.TimeoutException: Cannot get spooler!
+E RemotePrintSpooler:    at com.android.server.print.RemotePrintSpooler.bindLocked(RemotePrintSpooler.java:632)
+E RemotePrintSpooler:    at com.android.server.print.RemotePrintSpooler.getRemoteInstanceLazy(RemotePrintSpooler.java:601)
+E RemotePrintSpooler:    at com.android.server.print.RemotePrintSpooler.getPrintJobInfos(RemotePrintSpooler.java:161)
+E RemotePrintSpooler:    at com.android.server.print.UserState.getPrintJobInfos(UserState.java:278)
+E RemotePrintSpooler:    at com.android.server.print.PrintManagerService$PrintManagerImpl.getPrintJobInfos(PrintManagerService.java:160)
+E RemotePrintSpooler:    at android.print.IPrintManager$Stub.onTransact(IPrintManager.java:57)
+E RemotePrintSpooler:    at android.os.Binder.execTransact(Binder.java:565)
+E BatteryStatsService: no controller energy info supplied
+E BatteryStatsService: no controller energy info supplied 
+E PhoneInterfaceManager: [PhoneIntfMgr] queryModemActivityInfo: Empty response
+E KernelCpuSpeedReader: Failed to read cpu-freq: /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state (No such file or directory)
+E KernelUidCpuTimeReader: Failed to read uid_cputime: /proc/uid_cputime/show_uid_stat (No such file or directory)
+E BatteryStatsService: modem info is invalid: ModemActivityInfo{ mTimestamp=0 mSleepTimeMs=0 mIdleTimeMs=0 mTxTimeMs[]=[0, 0, 0, 0, 0] mRxTimeMs=0 mEnergyUsed=0}

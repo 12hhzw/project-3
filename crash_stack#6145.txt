@@ -1,0 +1,24 @@
+
+ E AndroidRuntime: FATAL EXCEPTION: AsyncTask #4
+ E AndroidRuntime: Process: com.ichi2.anki, PID: 5685
+ E AndroidRuntime: java.lang.RuntimeException: An error occurred while executing doInBackground()
+ E AndroidRuntime:        at android.os.AsyncTask$3.done(AsyncTask.java:325)
+ E AndroidRuntime:        at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:354)
+ E AndroidRuntime:        at java.util.concurrent.FutureTask.setException(FutureTask.java:223)
+ E AndroidRuntime:        at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+ E AndroidRuntime:        at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:243)
+ E AndroidRuntime:        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+ E AndroidRuntime:        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+ E AndroidRuntime:        at java.lang.Thread.run(Thread.java:761)
+ E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to read from field 'java.lang.Object android.util.Pair.first' on a null object reference
+ E AndroidRuntime:        at com.ichi2.libanki.Note._fieldOrd(Note.java:200)
+ E AndroidRuntime:        at com.ichi2.libanki.Note.setItem(Note.java:210)
+ E AndroidRuntime:        at com.ichi2.libanki.AnkiPackageExporter._addDummyCollection(AnkiPackageExporter.java:446)
+ E AndroidRuntime:        at com.ichi2.libanki.AnkiPackageExporter.exportVerbatim(AnkiPackageExporter.java:358)
+ E AndroidRuntime:        at com.ichi2.libanki.AnkiPackageExporter.exportInto(AnkiPackageExporter.java:340)
+ E AndroidRuntime:        at com.ichi2.async.CollectionTask.doInBackgroundExportApkg(CollectionTask.java:1222)
+ E AndroidRuntime:        at com.ichi2.async.CollectionTask.doInBackground(CollectionTask.java:301)
+ E AndroidRuntime:        at com.ichi2.async.CollectionTask.doInBackground(CollectionTask.java:73)
+ E AndroidRuntime:        at android.os.AsyncTask$2.call(AsyncTask.java:305)
+ E AndroidRuntime:        at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+ E AndroidRuntime:        ... 4 more
